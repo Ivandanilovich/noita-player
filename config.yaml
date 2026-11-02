@@ -1,0 +1,15 @@
+# noita-player configuration
+game:
+  dir: "C:\\Program Files (x86)\\Steam\\steamapps\\common\\noita"
+
+bridge:
+  host: 127.0.0.1
+  port: 54321 # must match BOT_PORT in lua/bot_bridge.lua
+
+# Used from Phase 3 onwards (LLM brain). Any OpenAI-compatible endpoint works,
+# including local servers (Ollama / LM Studio) on this machine's RTX 5090.
+llm:
+  base_url: "" # e.g. https://api.openai.com/v1
+  api_key_env: NOITA_LLM_API_KEY # name of the env var holding the key
+  model: gpt-4o-mini
+  decision_interval_s: 2.0 # how often the LLM is consulted

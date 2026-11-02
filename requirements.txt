@@ -1,0 +1,5 @@
+# Phase 2 - OS-level keyboard injection into the game window
+pynput>=1.7.6
+# Phase 3 - LLM client + config parsing
+requests>=2.31
+PyYAML>=6.0
